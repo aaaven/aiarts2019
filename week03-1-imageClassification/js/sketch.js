@@ -5,7 +5,7 @@
 let classifier;
 let img;
 
-let name = "Name";
+let label = "label";
 let probability = 0;
 
 
@@ -25,7 +25,7 @@ function setup() {
 function draw() {
   image(img, 0, 0);
   textSize(20);
-  text(name , 100, height/2);
+  text(label , 100, height/2);
   text(probability, 100, height/2 + 30);
 }
 
@@ -40,6 +40,6 @@ function classifyImage() {
 }
 
 function gotResult(err, results) {
-  name = results[0].className;
+  label = results[0].className;
   probability = nf(results[0].probability, 0, 2);
 }

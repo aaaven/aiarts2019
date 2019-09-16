@@ -34,9 +34,6 @@ function modelReady() {
 
 function classifyVideo() {
   classifier.predict(gotResult);
-
-  /////  .predict(input, ?callback) /////
-  // A HTML video or image element or a p5 image or video element. If no input is provided, the default is to use the video given in the constructor.
 }
 
 
