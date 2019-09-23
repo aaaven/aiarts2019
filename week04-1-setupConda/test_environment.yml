@@ -1,0 +1,47 @@
+name: test
+channels:
+  - defaults
+dependencies:
+  - ca-certificates=2019.5.15=1
+  - certifi=2019.6.16=py37_1
+  - libcxx=4.0.1=hcfea43d_1
+  - libcxxabi=4.0.1=hcfea43d_1
+  - libedit=3.1.20181209=hb402a30_0
+  - libffi=3.2.1=h475c297_4
+  - ncurses=6.1=h0a44026_1
+  - openssl=1.1.1d=h1de35cc_1
+  - python=3.7.4=h359304d_1
+  - python.app=2=py37_9
+  - readline=7.0=h1de35cc_5
+  - setuptools=41.0.1=py37_0
+  - sqlite=3.29.0=ha441bb4_0
+  - tk=8.6.8=ha441bb4_0
+  - wheel=0.33.4=py37_0
+  - xz=5.2.4=h1de35cc_4
+  - zlib=1.2.11=h1de35cc_3
+  - pip:
+    - absl-py==0.8.0
+    - astor==0.8.0
+    - cycler==0.10.0
+    - gast==0.3.2
+    - grpcio==1.23.0
+    - h5py==2.10.0
+    - keras-applications==1.0.8
+    - keras-preprocessing==1.1.0
+    - kiwisolver==1.1.0
+    - markdown==3.1.1
+    - matplotlib==3.1.1
+    - mock==3.0.5
+    - numpy==1.17.2
+    - pip==19.2.3
+    - protobuf==3.9.1
+    - pyparsing==2.4.2
+    - python-dateutil==2.8.0
+    - six==1.12.0
+    - tensorboard==1.13.1
+    - tensorflow==1.13.1
+    - tensorflow-estimator==1.13.0
+    - termcolor==1.1.0
+    - werkzeug==0.16.0
+prefix: /anaconda3/envs/test
+
