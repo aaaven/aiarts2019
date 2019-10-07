@@ -1,7 +1,16 @@
-import tensorflow as tf
-print(tf.__version__)
-from tensorflow import keras
-import numpy as np
+import warnings
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore",category=FutureWarning)
+    import tensorflow as tf
+    from tensorflow import keras
+    import numpy as np
+    from tensorflow.keras.preprocessing.text import Tokenizer
+print('ready')
+
+# import tensorflow as tf
+# print(tf.__version__)
+# from tensorflow import keras
+# import numpy as np
 import os
 
 import matplotlib.pyplot as plt
@@ -30,7 +39,3 @@ plt.show()
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat','Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 print("the number {} image is {}".format(index,class_names[train_labels[index]]))
-
-# images
-train_images = train_images/255.0
-test_images = test_images/255.0
