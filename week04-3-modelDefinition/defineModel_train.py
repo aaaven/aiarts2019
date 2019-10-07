@@ -1,7 +1,16 @@
+import warnings
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore",category=FutureWarning)
+    import tensorflow as tf
+    from tensorflow import keras
+    import numpy as np
+    from tensorflow.keras.preprocessing.text import Tokenizer
+"""
 import tensorflow as tf
 print(tf.__version__)
 from tensorflow import keras
 import numpy as np
+"""
 import os
 
 import matplotlib.pyplot as plt
@@ -19,6 +28,7 @@ print(len(train_images),train_images.shape)
 # print(train_images[0])
 print(np.array_str(train_images[0], max_line_width=200))
 
+"""
 index = np.random.randint(1,60000)
 plt.imsave('sample-{}.png'.format(index),train_images[index])
 imgplot = plt.imshow(train_images[index])
@@ -28,6 +38,7 @@ plt.show()
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat','Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 print("the number {} image is {}".format(index,class_names[train_labels[index]]))
+"""
 
 # images
 train_images = train_images/255.0
