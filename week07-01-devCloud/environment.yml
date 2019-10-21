@@ -1,0 +1,54 @@
+name: test_tf
+channels:
+  - intel
+  - defaults
+dependencies:
+  - _tflow_select=2.3.0=mkl
+  - absl-py=0.7.0=py36_0
+  - astor=0.7.1=py36_0
+  - bzip2=1.0.6=17
+  - c-ares=1.15.0=h7b6447c_1
+  - certifi=2018.1.18=py36_2
+  - gast=0.2.2=py36_0
+  - grpcio=1.14.1=py36h9ba97e2_0
+  - h5py=2.8.0=py36h989c5e5_3
+  - hdf5=1.10.2=2
+  - icc_rt=2019.3=intel_199
+  - intel-openmp=2019.3=intel_199
+  - intelpython=2019.3=0
+  - keras-applications=1.0.7=py_0
+  - keras-preprocessing=1.0.9=py_0
+  - libgcc-ng=8.2.0=hdf63c60_1
+  - libprotobuf=3.6.1=hd408876_0
+  - libstdcxx-ng=8.2.0=hdf63c60_1
+  - markdown=3.0.1=py36_0
+  - mkl=2019.3=intel_199
+  - mkl_fft=1.0.11=py36h7b7c402_0
+  - mkl_random=1.0.2=py36h7b7c402_4
+  - numpy=1.16.1=py36h7b7c402_3
+  - numpy-base=1.16.1=py36_3
+  - openssl=1.0.2r=0
+  - pip=10.0.1=py36_0
+  - protobuf=3.6.1=py36he6710b0_0
+  - python=3.6.8=6
+  - scipy=1.2.0=py36_3
+  - setuptools=39.0.1=py36_0
+  - six=1.11.0=py36_3
+  - sqlite=3.27.2=2
+  - tbb=2019.4=intel_199
+  - tbb4py=2019.4=py36_intel_0
+  - tcl=8.6.4=22
+  - tensorboard=1.12.2=py36he6710b0_0
+  - tensorflow=1.12.0=py36_0
+  - tensorflow-mkl=1.12.0=h4fcabd2_0
+  - termcolor=1.1.0=py36_1
+  - tk=8.6.4=28
+  - werkzeug=0.14.1=py36_0
+  - wheel=0.31.0=py36_3
+  - xz=5.2.3=2
+  - zlib=1.2.11=5
+  - pip:
+    - keras==2.2.4
+    - pyyaml==5.1
+prefix: /home/u24235/.conda/envs/test_tf
+
